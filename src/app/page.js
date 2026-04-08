@@ -1,0 +1,17 @@
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Work from "@/components/Work";
+import Services from "@/components/Services";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <main className="w-full relative bg-black selection:bg-red-deep selection:text-white">
+      <Hero />
+      <About />
+      <Work />
+      <Services />
+      <Footer />
+    </main>
+  );
+}
