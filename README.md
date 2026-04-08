@@ -1,2 +1,3 @@
-# yashbarott-portfolio
-This  is my portfolio one page website design 
+# Yash Portfolio
+
+My personal portfolio website.
