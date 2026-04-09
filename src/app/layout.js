@@ -28,7 +28,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${syne.variable} antialiased`}
     >
-      <body className="flex flex-col font-sans selection:bg-red-deep selection:text-white bg-black overflow-x-hidden">
+      <body 
+        className="flex flex-col font-sans selection:bg-red-deep selection:text-white bg-black overflow-x-hidden"
+        suppressHydrationWarning
+      >
         <Preloader />
         <SmoothScroll>
           <CustomCursor />

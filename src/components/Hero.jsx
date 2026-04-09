@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col justify-center px-6 md:px-24 pt-32 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center px-6 md:px-24 pt-20 md:pt-28 overflow-hidden"
     >
       {/* Background Subtle elements */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-40 mix-blend-screen">
@@ -58,7 +58,7 @@ export default function Hero() {
           as="h1"
           text={"WordPress & Web Designer"}
           delay={0.4}
-          className="font-head text-[clamp(3.5rem,8vw,8rem)] font-extrabold leading-[0.95] tracking-tight text-white mb-10 mix-blend-difference"
+          className="font-head text-[clamp(3.5rem,8vw,8rem)] font-extrabold leading-[0.95] tracking-tight text-white mb-8 mix-blend-difference"
         />
 
         <div className="flex flex-col gap-10  mt-12 w-full max-w-[1600px]">
