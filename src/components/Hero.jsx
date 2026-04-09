@@ -38,9 +38,9 @@ export default function Hero() {
           <defs>
             <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
           </defs>
-          <text fontSize="11" fontWeight="bold" letterSpacing="0.1em" className="uppercase font-sans">
+          <text fontSize="11" fontWeight="bold" letterSpacing="0.2em" className="uppercase font-sans">
             <textPath href="#circle">
-              WordPress Expert • Web Developer •
+              WordPress • Web Designer •
             </textPath>
           </text>
         </svg>
@@ -56,14 +56,15 @@ export default function Hero() {
 
         <SplitTextReveal
           as="h1"
-          text={"WordPress &\nShopify Expert"}
+          text={"WordPress & Web Designer"}
           delay={0.4}
           className="font-head text-[clamp(3.5rem,8vw,8rem)] font-extrabold leading-[0.95] tracking-tight text-white mb-10 mix-blend-difference"
         />
 
         <div className="flex flex-col gap-10  mt-12 w-full max-w-[1600px]">
           <div className="opacity-0 translate-y-8 animate-fade-in-up animation-delay-800 flex-1 text-gray-400 text-[clamp(1rem,2vw,1.25rem)] leading-relaxed">
-            Fast, Modern & Conversion-Driven Websites. Building creative digital experiences & identities for companies and brands.
+            "As a Visual Alchemist, I believe in the transformative power of design to elevate brands and shape unforgettable
+            user experiences."
           </div>
 
           <div className="opacity-0 translate-y-8 animate-fade-in-up animation-delay-1000 flex flex-wrap items-center gap-6 pb-2">

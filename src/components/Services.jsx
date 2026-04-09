@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { FaWordpress, FaShopify, FaElementor, FaFigma, FaBolt, FaSearch } from "react-icons/fa";
+import { FaWordpress, FaShopify, FaElementor, FaFigma, FaBolt, FaSearch, FaReact } from "react-icons/fa";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -15,7 +15,8 @@ const servicesList = [
   { title: "Elementor Design", icon: FaElementor, desc: "Pixel-perfect Elementor setups that don't compromise speed." },
   { title: "Responsive UI/UX", icon: FaFigma, desc: "Flawless experiences across all device sizes." },
   { title: "Optimization", icon: FaBolt, desc: "90+ Core Web Vitals and lightning fast loading times." },
-  { title: "Technical SEO", icon: FaSearch, desc: "Built-in structure that ranks well on search engines." }
+  { title: "Technical SEO", icon: FaSearch, desc: "Built-in structure that ranks well on search engines." },
+  { title: "React Development", icon: FaReact, desc: "Building fast, scalable, and dynamic user interfaces with modern React architecture." }
 ];
 
 export default function Services() {
@@ -70,7 +71,7 @@ export default function Services() {
               className="w-[300px] md:w-[450px] h-[400px] md:h-[500px] bg-gray-100 flex flex-col justify-between p-10 border border-white/5 rounded-2xl group hover:bg-gray-200 transition-colors"
             >
               <div className="text-red-fire group-hover:scale-110 transition-transform origin-left duration-500 text-[clamp(2.5rem,5vw,3rem)]">
-                <Icon width={100} height={100} />
+                <Icon className="w-[100px] h-[100px]" />
               </div>
               <div>
                 <p className="text-red-fire font-head text-[clamp(0.75rem,1.5vw,0.875rem)] font-bold tracking-widest uppercase mb-4 opacity-50">0{idx + 1}</p>

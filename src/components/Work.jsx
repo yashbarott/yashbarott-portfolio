@@ -75,7 +75,7 @@ export default function Work() {
 
                   <div className="flex flex-wrap gap-3 mb-10">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="px-5 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/5 text-sm font-semibold text-gray-200 tracking-wider">
+                      <span key={i} className="px-5 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/5 text-sm font-semibold text-white tracking-wider">
                         {tag}
                       </span>
                     ))}
