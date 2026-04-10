@@ -38,9 +38,9 @@ export default function Hero() {
           <defs>
             <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
           </defs>
-          <text fontSize="11" fontWeight="bold" letterSpacing="0.2em" className="uppercase font-sans">
+          <text fontSize="11" fontWeight="bold" letterSpacing="0.25em" className="uppercase font-sans">
             <textPath href="#circle">
-              Designer • Developer
+              Web Designer • Developer
             </textPath>
           </text>
         </svg>
