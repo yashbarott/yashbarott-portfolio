@@ -17,7 +17,7 @@ const projects = [
     tags: ["Shopify", "UI/UX", "Speed Optimization", "Conversion"],
     desc: "At Yash Barot, we recognize that effective e-commerce goes beyond simply listing products. It involves understanding target audiences, crafting compelling user flows, and improving the sustainable growth of an online storefront.",
     bgImage: "url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=2000')",
-    link: "https://example.com/ecommerce"
+    link: "mailto:yashb0227@gmail.com"
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     tags: ["WordPress", "Elementor", "SEO", "Branding"],
     desc: "We build scalable, high-performing corporate websites that establish trust and authority. Every pixel is optimized to ensure a seamless experience that reflects your brand's core values.",
     bgImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000')",
-    link: "https://example.com/corporate"
+    link: "mailto:yashb0227@gmail.com"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
     tags: ["Frontend", "GSAP", "Tailwind", "React"],
     desc: "Standing out requires more than just a template. We craft bespoke digital experiences with immersive animations and layout strategies that captivate visitors from the first second.",
     bgImage: "url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=2000')",
-    link: "https://example.com/portfolio"
+    link: "mailto:yashb0227@gmail.com"
   }
 ];
 
