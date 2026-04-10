@@ -32,7 +32,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-[clamp(1.5rem,3vw,2rem)] text-[clamp(0.75rem,1vw,0.875rem)] font-semibold tracking-wider uppercase text-gray-300">
           <a href="#about" className="interactive hover:text-white transition-colors">About</a>
           <a href="#services" className="interactive hover:text-white transition-colors">Services</a>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="interactive hover:text-white transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/yash-barot-95b7a5210/" target="_blank" rel="noopener noreferrer" className="interactive hover:text-white transition-colors">LinkedIn</a>
           <a href="https://github.com/yashbarott" target="_blank" rel="noopener noreferrer" className="interactive hover:text-white transition-colors">GitHub</a>
           <a href="mailto:yashb0227@gmail.com" className="interactive bg-gray-100 hover:bg-white text-white hover:text-black px-[clamp(1rem,2vw,1.5rem)] py-[clamp(0.5rem,1vw,0.75rem)] rounded-full transition-colors border border-white/10">Hire Me</a>
         </nav>
