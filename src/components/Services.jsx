@@ -63,16 +63,16 @@ export default function Services() {
         <h2 className="font-head text-[clamp(2.5rem,6vw,4.5rem)] font-bold text-white mb-2">My Services</h2>
       </div>
 
-      <div ref={trackRef} className="flex gap-6 pl-6 md:pl-24 pr-6 md:pr-24 pt-20 w-max">
+      <div ref={trackRef} className="flex gap-4 md:gap-6 pl-4 md:pl-24 pr-4 md:pr-24 pt-16 md:pt-20 w-max">
         {servicesList.map((service, idx) => {
           const Icon = service.icon;
           return (
             <div
               key={idx}
-              className="w-[300px] md:w-[450px] h-[400px] md:h-[500px] bg-gray-100 flex flex-col justify-between p-10 border border-white/5 rounded-2xl group hover:bg-gray-200 transition-colors"
+              className="w-[260px] md:w-[450px] h-[350px] md:h-[500px] bg-gray-100 flex flex-col justify-between p-6 md:p-10 border border-white/5 rounded-2xl group hover:bg-gray-200 transition-colors"
             >
               <div className="text-red-fire group-hover:scale-110 transition-transform origin-left duration-500 text-[clamp(2.5rem,5vw,3rem)]">
-                <Icon className="w-[100px] h-[100px]" />
+                <Icon className="w-[60px] h-[60px] md:w-[100px] md:h-[100px]" />
               </div>
               <div>
                 <p className="text-red-fire font-head text-[clamp(0.75rem,1.5vw,0.875rem)] font-bold tracking-widest uppercase mb-4 opacity-50">0{idx + 1}</p>
