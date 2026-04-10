@@ -73,7 +73,7 @@ export default function Footer() {
 
       <div className="fixed right-4 bottom-4 z-[200]">
         <a
-          href="https://wa.me/8849243475/"
+          href="https://wa.me/8849213475/"
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex h-10 w-10 md:h-14 md:w-14 items-center justify-center rounded-full bg-red-fire text-black shadow-2xl shadow-red-fire/20 transition-transform duration-300 hover:-translate-y-1 hover:scale-105"

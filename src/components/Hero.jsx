@@ -40,7 +40,7 @@ export default function Hero() {
           </defs>
           <text fontSize="11" fontWeight="bold" letterSpacing="0.2em" className="uppercase font-sans">
             <textPath href="#circle">
-              WordPress • Web Designer •
+              Designer • Developer
             </textPath>
           </text>
         </svg>
@@ -56,7 +56,7 @@ export default function Hero() {
 
         <SplitTextReveal
           as="h1"
-          text={"WordPress & Web Designer"}
+          text={"Web Designer & Developer."}
           delay={0.4}
           className="font-head text-[clamp(3.5rem,8vw,8rem)] font-extrabold leading-[0.95] tracking-tight text-white mb-8 mix-blend-difference"
         />

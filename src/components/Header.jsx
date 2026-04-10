@@ -56,7 +56,7 @@ export default function Header() {
           <div className="max-w-[1600px] mx-auto px-6 py-6 flex flex-col gap-4 text-white text-[clamp(0.9rem,2vw,1rem)] uppercase font-semibold tracking-[0.25em]">
             <a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">About</a>
             <a href="#services" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">Services</a>
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/yash-barot-95b7a5210/" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">LinkedIn</a>
             <a href="https://github.com/yashbarott" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">GitHub</a>
             <a href="mailto:yashb0227@gmail.com" onClick={() => setMenuOpen(false)} className="inline-flex items-center justify-center rounded-full bg-white text-black px-5 py-3 font-semibold transition-colors hover:bg-gray-200">
               Hire Me
