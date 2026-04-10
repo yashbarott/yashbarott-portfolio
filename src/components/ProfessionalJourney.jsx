@@ -32,9 +32,27 @@ const journeyItems = [
 export default function ProfessionalJourney() {
   const sectionRef = useRef(null);
   const itemsRef = useRef([]);
+  const badgesRef = useRef([]);
 
   useEffect(() => {
     if (!sectionRef.current) return;
+
+    // Animate connecting line
+    gsap.fromTo(
+      sectionRef.current.querySelector(".connecting-line"),
+      { height: 0 },
+      {
+        height: "100%",
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 70%",
+          end: "top 20%",
+          scrub: 1,
+          invalidateOnRefresh: true,
+        }
+      }
+    );
 
     // Stagger animation for timeline items
     itemsRef.current.forEach((item, idx) => {
@@ -48,29 +66,31 @@ export default function ProfessionalJourney() {
         }
       });
 
-      // Animate the line
+      // Animate badge with scale and glow effect
       tl.fromTo(
-        item.querySelector(".timeline-line"),
-        { height: 0 },
-        { height: "100%", duration: 1 },
-        0
-      );
-
-      // Animate the dot
-      tl.fromTo(
-        item.querySelector(".timeline-dot"),
+        item.querySelector(".timeline-badge"),
         { scale: 0, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.5 },
-        0.3
+        { scale: 1, opacity: 1, duration: 0.6 },
+        0 + idx * 0.2
       );
 
-      // Animate the content
+      // Animate content slide in
       tl.fromTo(
         item.querySelector(".timeline-content"),
-        { opacity: 0, x: -30 },
+        { opacity: 0, x: -40 },
         { opacity: 1, x: 0, duration: 0.8 },
-        0.5
+        0.4 + idx * 0.2
       );
+    });
+
+    // Add hover animations to badges
+    badgesRef.current.forEach((badge) => {
+      badge.addEventListener("mouseenter", () => {
+        gsap.to(badge, { scale: 1.15, duration: 0.3 });
+      });
+      badge.addEventListener("mouseleave", () => {
+        gsap.to(badge, { scale: 1, duration: 0.3 });
+      });
     });
 
     return () => {
@@ -90,28 +110,33 @@ export default function ProfessionalJourney() {
         </div>
 
         <div className="relative">
-          {/* Vertical line connecting all items */}
-          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-red-fire via-red-fire/50 to-transparent" />
+          {/* Animated connecting line */}
+          <div className="connecting-line absolute left-[35px] md:left-[42px] top-0 bottom-0 w-1 bg-gradient-to-b from-red-fire via-red-fire/40 to-transparent h-0 origin-top" />
 
-          <div className="space-y-10">
+          <div className="space-y-12">
             {journeyItems.map((item, idx) => (
               <div
                 key={idx}
                 ref={(el) => (itemsRef.current[idx] = el)}
-                className="relative pl-20 md:pl-32"
+                className="relative pl-28 md:pl-40"
               >
-                {/* Timeline line (animated) */}
-                <div className="timeline-line absolute left-2 md:left-3 top-0 w-[2px] h-0 bg-red-fire" />
-
-                {/* Timeline dot */}
-                <div className="timeline-dot absolute left-0 md:left-[6px] top-2 w-4 h-4 md:w-5 md:h-5 rounded-full bg-red-fire border-4 border-black" />
+                {/* Animated Number Badge */}
+                <div
+                  ref={(el) => (badgesRef.current[idx] = el)}
+                  className="timeline-badge absolute left-0 md:left-1 top-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-red-fire to-red-600 flex items-center justify-center cursor-pointer shadow-lg shadow-red-fire/50 group hover:shadow-red-fire/100 transition-shadow duration-300"
+                >
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-red-fire/20 to-transparent animate-pulse" />
+                  <span className="relative text-2xl md:text-3xl font-head font-extrabold text-white">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                </div>
 
                 {/* Content */}
-                <div className="timeline-content">
+                <div className="timeline-content bg-gray-900/30 border border-gray-800 rounded-2xl p-6 md:p-8 hover:border-red-fire/30 transition-all duration-500 group">
                   <p className="font-sans text-[clamp(0.75rem,1.5vw,0.875rem)] tracking-[0.1em] uppercase text-red-fire font-bold mb-2">
                     {item.dateRange}
                   </p>
-                  <h3 className="font-head text-[clamp(1.25rem,3vw,1.75rem)] font-bold text-white mb-2">
+                  <h3 className="font-head text-[clamp(1.25rem,3vw,1.75rem)] font-bold text-white mb-2 group-hover:text-red-fire transition-colors duration-300">
                     {item.role}
                   </h3>
                   <p className="font-sans text-[clamp(0.875rem,1.5vw,1rem)] text-gray-400 mb-4">
