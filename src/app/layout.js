@@ -46,13 +46,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/yashbarott.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Yash Barot Portfolio",
-      },
-      {
-        url: "/og-image",
+        url: "https://website-yash.vercel.app/og-image",
         width: 1200,
         height: 630,
         alt: "Yash Barot Portfolio",
@@ -64,7 +58,7 @@ export const metadata = {
     title: "Yash Barot — WordPress & Shopify Expert",
     description:
       "Creative digital experiences built for fast, modern, conversion-driven WordPress and Shopify websites.",
-    images: ["/yashbarott.jpg"],
+    images: ["https://website-yash.vercel.app/og-image"],
     creator: "@yashbarott",
   },
   alternates: {
