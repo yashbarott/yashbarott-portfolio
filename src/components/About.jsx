@@ -4,7 +4,7 @@ import TextScrub from "./TextScrub";
 
 export default function About() {
   return (
-    <section className="relative w-full py-20 px-4 md:px-24 bg-gray-100/50">
+    <section id="about" className="relative w-full py-20 px-4 md:px-24 bg-gray-100/50">
       <div className="max-w-[1600px] w-full mx-auto flex flex-col lg:flex-row gap-10 items-center lg:items-start">
         <div className="w-full lg:w-1/4 shrink-0">
           <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl skew-y-1 transform transition-transform hover:skew-y-0 duration-700">
