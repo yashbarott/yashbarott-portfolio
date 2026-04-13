@@ -111,7 +111,7 @@ export default function Services() {
     <section
       ref={sectionRef}
       id="services"
-      className="relative w-full h-screen bg-black overflow-hidden flex flex-col justify-center"
+      className="services-section relative w-full h-screen bg-black overflow-hidden flex flex-col justify-center"
     >
       <div className="absolute top-16 left-6 md:left-24">
         <p className="font-sans text-[clamp(0.75rem,2vw,0.875rem)] tracking-[0.2em] uppercase text-red-fire font-bold flex items-center gap-4 mb-4">

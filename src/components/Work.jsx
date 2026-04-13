@@ -43,7 +43,7 @@ export default function Work() {
   const containerRef = useRef(null);
 
   return (
-    <section ref={containerRef} id="work" className="relative w-full pt-20 pb-6 px-4 md:px-12 bg-black">
+    <section ref={containerRef} id="work" className="work-section relative w-full pt-20 pb-6 px-4 md:px-12 bg-black">
       <div className="max-w-[1600px] mx-auto">
         <div className="mb-12 px-4">
           <p className="font-sans text-[clamp(0.75rem,2vw,0.875rem)] tracking-[0.2em] uppercase text-red-fire font-bold flex items-center gap-4 mb-4">
@@ -58,7 +58,7 @@ export default function Work() {
             return (
               <div
                 key={project.id}
-                className="sticky top-0 w-full rounded-[40px] overflow-hidden flex flex-col justify-end shadow-2xl border border-white/10"
+                className="project-card sticky top-0 w-full rounded-[40px] overflow-hidden flex flex-col justify-end shadow-2xl border border-white/10"
                 style={{
                   height: "80vh",
                   top: `calc(10vh + ${index * 40}px)`,

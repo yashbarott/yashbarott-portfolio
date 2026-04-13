@@ -79,3 +79,58 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+@media (max-height: 800px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding-top: 4.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-section .hero-orb,
+  .hero-rotate-badge {
+    display: none !important;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(2.4rem, 7vw, 4.25rem);
+    line-height: 1.05;
+  }
+
+  .hero-section p,
+  .hero-section .opacity-0 {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  }
+
+  .services-section {
+    min-height: auto;
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .work-section .project-card {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: 55vh;
+    margin-bottom: 2rem;
+  }
+
+  .work-section .project-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .work-section .project-card > div {
+    padding: 2rem !important;
+  }
+}

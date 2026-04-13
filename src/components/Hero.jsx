@@ -24,7 +24,7 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col justify-center px-6 md:px-24 pt-20 md:pt-28 overflow-hidden"
+      className="hero-section relative min-h-screen flex flex-col justify-center px-6 md:px-24 pt-20 md:pt-28 overflow-hidden"
     >
       {/* Background Subtle elements */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-40 mix-blend-screen">
@@ -33,7 +33,7 @@ export default function Hero() {
       </div>
 
       {/* Rotating Badge */}
-      <div className="absolute top-32 right-10 md:right-24 z-10 animate-[spin_10s_linear_infinite] opacity-60 mix-blend-difference hidden md:block">
+      <div className="hero-rotate-badge absolute top-32 right-10 md:right-24 z-10 animate-[spin_10s_linear_infinite] opacity-60 mix-blend-difference hidden md:block">
         <svg viewBox="0 0 100 100" className="w-32 h-32 fill-current text-red-fire">
           <defs>
             <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
