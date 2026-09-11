@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { openConsultation } from "./Consultation";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +35,7 @@ export default function Header() {
           <a href="#services" className="interactive hover:text-white transition-colors">Services</a>
           <a href="https://www.linkedin.com/in/yash-barot-95b7a5210/" target="_blank" rel="noopener noreferrer" className="interactive hover:text-white transition-colors">LinkedIn</a>
           <a href="https://github.com/yashbarott" target="_blank" rel="noopener noreferrer" className="interactive hover:text-white transition-colors">GitHub</a>
-          <a href="mailto:yashb0227@gmail.com" className="interactive bg-gray-100 hover:bg-white text-white hover:text-black px-[clamp(1rem,2vw,1.5rem)] py-[clamp(0.5rem,1vw,0.75rem)] rounded-full transition-colors border border-white/10">Hire Me</a>
+          <button type="button" onClick={openConsultation} className="interactive bg-gray-100 hover:bg-white text-white hover:text-black px-[clamp(1rem,2vw,1.5rem)] py-[clamp(0.5rem,1vw,0.75rem)] rounded-full transition-colors border border-white/10">Let&apos;s work together</button>
         </nav>
 
         {/* Mobile menu icon */}
@@ -58,9 +59,7 @@ export default function Header() {
             <a href="#services" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">Services</a>
             <a href="https://www.linkedin.com/in/yash-barot-95b7a5210/" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">LinkedIn</a>
             <a href="https://github.com/yashbarott" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)} className="hover:text-red-fire transition-colors">GitHub</a>
-            <a href="mailto:yashb0227@gmail.com" onClick={() => setMenuOpen(false)} className="inline-flex items-center justify-center rounded-full bg-white text-black px-5 py-3 font-semibold transition-colors hover:bg-gray-200">
-              Hire Me
-            </a>
+            <button type="button" onClick={() => { setMenuOpen(false); openConsultation(); }} className="inline-flex items-center justify-center rounded-full bg-white text-black px-5 py-3 font-semibold transition-colors hover:bg-gray-200">Let&apos;s work together</button>
           </div>
         </div>
       )}

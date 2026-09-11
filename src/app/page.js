@@ -5,6 +5,7 @@ import Work from "@/components/Work";
 import Services from "@/components/Services";
 import ProfessionalJourney from "@/components/ProfessionalJourney";
 import Footer from "@/components/Footer";
+import Consultation from "@/components/Consultation";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <ProfessionalJourney />
       <Footer />
+      <Consultation />
     </main>
   );
 }

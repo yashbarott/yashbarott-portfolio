@@ -4,6 +4,7 @@ import SplitTextReveal from "./SplitTextReveal";
 import { MoveRight } from "lucide-react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { openConsultation } from "./Consultation";
 
 export default function Hero() {
   const containerRef = useRef(null);
@@ -68,12 +69,12 @@ export default function Hero() {
           </div>
 
           <div className="opacity-0 translate-y-8 animate-fade-in-up animation-delay-1000 flex flex-wrap items-center gap-6 pb-2">
-            <a href="mailto:yashb0227@gmail.com" className="interactive group relative overflow-hidden rounded-full bg-white text-black px-[clamp(1.5rem,3vw,2rem)] py-[clamp(0.75rem,2vw,1rem)] font-bold text-[clamp(0.875rem,1.5vw,1rem)] tracking-wide transition-transform hover:scale-105 inline-block">
+            <button type="button" onClick={openConsultation} className="interactive group relative overflow-hidden rounded-full bg-white text-black px-[clamp(1.5rem,3vw,2rem)] py-[clamp(0.75rem,2vw,1rem)] font-bold text-[clamp(0.875rem,1.5vw,1rem)] tracking-wide transition-transform hover:scale-105 inline-block">
               <span className="relative z-10 flex items-center gap-2">
                 Hire Me <MoveRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </span>
               <div className="absolute inset-0 bg-red-fire translate-y-[100%] transition-transform duration-300 group-hover:translate-y-0" />
-            </a>
+            </button>
             <a href="#work" className="interactive text-[clamp(0.75rem,1.5vw,0.875rem)] font-semibold tracking-wide uppercase border-b border-transparent hover:border-white transition-colors pb-1">
               View Work
             </a>
