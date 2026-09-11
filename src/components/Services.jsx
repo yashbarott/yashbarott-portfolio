@@ -125,7 +125,7 @@ export default function Services() {
 
       <div
         ref={trackRef}
-        className="flex gap-4 md:gap-6 pl-4 md:pl-24 pr-4 md:pr-24 pt-16 md:pt-20 w-max"
+        className="flex gap-4 md:gap-6 pl-4 md:pl-24 pr-4 md:pr-24 pt-29 md:pt-20 w-max"
       >
         {servicesList.map((service, idx) => {
           const Icon = service.icon;

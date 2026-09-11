@@ -10,14 +10,19 @@ if (typeof window !== "undefined") {
 
 const journeyItems = [
   {
-    dateRange: "February 2024 - Present",
-    role: "WordPress Web Designer",
+    dateRange: "July 2026 - Present",
+    role: "Sr. Web Designer",
     company: "tviStech, Ahmedabad",
-    desc: "Leading digital experience creation, building intuitive interfaces, and optimizing websites for performance while staying ahead with emerging technologies."
+    desc: "Leading end-to-end web projects, shaping digital experiences from concept to launch, and guiding design, development, and performance to deliver modern, high-impact websites."
+  },{
+    dateRange: "February 2024 - July 2026",
+    role: "Web Designer",
+    company: "tviStech, Ahmedabad",
+    desc: "Designing next-generation digital experiences, building intuitive interfaces, and bringing brands to life through creative design, seamless interactions, and performance-driven web development."
   },
   {
-    dateRange: "August 2023 - January 2024",
-    role: "Intern WordPress Web Designer",
+    dateRange: "August 2023 - February 2024",
+    role: "Intern Web Designer",
     company: "tviStech, Ahmedabad",
     desc: "Developed foundational skills in WordPress development and responsive design during 6-month intensive internship."
   },
@@ -99,7 +104,7 @@ export default function ProfessionalJourney() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full py-16 px-4 md:px-24 bg-black">
+    <section ref={sectionRef} className="relative w-full py-16 px-4 md:px-24 bg-black journey-section">
       <div className="max-w-[1200px] mx-auto">
         <div className="mb-10">
           <p className="font-sans text-[clamp(0.75rem,2vw,0.875rem)] tracking-[0.2em] uppercase text-red-fire font-bold flex items-center gap-4 mb-4">
@@ -118,7 +123,7 @@ export default function ProfessionalJourney() {
               <div
                 key={idx}
                 ref={(el) => (itemsRef.current[idx] = el)}
-                className="relative pl-28 md:pl-40"
+                className="relative pl-15 md:pl-40"
               >
                 {/* Animated Number Badge */}
                 <div
@@ -142,7 +147,7 @@ export default function ProfessionalJourney() {
                   <p className="font-sans text-[clamp(0.875rem,1.5vw,1rem)] text-gray-400 mb-4">
                     {item.company}
                   </p>
-                  <p className="text-gray-300 text-[clamp(1rem,2vw,1.125rem)] leading-relaxed max-w-2xl">
+                  <p className="text-gray-300 text-[clamp(1rem,2vw,1.125rem)] leading-relaxed max-w-4xl">
                     {item.desc}
                   </p>
                 </div>

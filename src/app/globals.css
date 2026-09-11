@@ -80,7 +80,7 @@ body {
     text-wrap: balance;
   }
 
-@media (max-height: 800px) {
+@media (max-width: 767px) {
   body {
     font-size: 0.95rem;
   }
@@ -130,7 +130,14 @@ body {
     margin-bottom: 0;
   }
 
-  .work-section .project-card > div {
-    padding: 2rem !important;
+  .work-section .project-card div {
+    padding: 1rem !important;
+    flex-wrap: wrap !important;
   }
+  .journey-section .timeline-badge {
+    width: 36px !important;
+    height: 36px !important;
+  }
+ .journey-section .timeline-badge span.relative{font-size: 12px !important;}
+ .journey-section .connecting-line {left: 16px;}
 }
