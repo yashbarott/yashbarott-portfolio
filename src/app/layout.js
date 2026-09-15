@@ -20,7 +20,7 @@ const syne = Syne({
 export const metadata = {
   metadataBase: new URL("https://website-yash.vercel.app"),
   title: {
-    default: "Yash Barot — WordPress & Shopify Expert",
+    default: "Yash Barot — Web Design & Development | WordPress & Shopify Expert",
     template: "%s | Yash Barot",
   },
   description:
@@ -37,7 +37,7 @@ export const metadata = {
   authors: [{ name: "Yash Barot", url: "https://website-yash.vercel.app" }],
   creator: "Yash Barot",
   openGraph: {
-    title: "Yash Barot — WordPress & Shopify Expert",
+    title: "Yash Barot — Web Design & Development | WordPress & Shopify Expert",
     description:
       "Creative digital experiences built for fast, modern, conversion-driven WordPress and Shopify websites.",
     url: "https://website-yash.vercel.app",
@@ -55,7 +55,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yash Barot — WordPress & Shopify Expert",
+    title: "Yash Barot — Web Design & Development | WordPress & Shopify Expert",
     description:
       "Creative digital experiences built for fast, modern, conversion-driven WordPress and Shopify websites.",
     images: ["https://website-yash.vercel.app/og-image"],
