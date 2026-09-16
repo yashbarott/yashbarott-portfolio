@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import ProfessionalJourney from "@/components/ProfessionalJourney";
 import Footer from "@/components/Footer";
 import Consultation from "@/components/Consultation";
+import BotSearchSection from "@/components/BotSearchSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Work />
       <Services />
       <ProfessionalJourney />
+      <BotSearchSection />
       <Footer />
       <Consultation />
     </main>
